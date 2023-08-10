@@ -15,13 +15,13 @@ type SessionServices struct {
 	Data []*models.SessionModel `json:"data,omitempty"`
 }
 
-func InitSessionServices() *SessionServices {
+func InitSessionService() *SessionServices {
 	return &SessionServices{}
 }
 
 const (
 	SESSION_EXPIRE        = 24 * time.Hour
-	SESSION_KEY           = "dsip"
+	SESSION_KEY           = "SID"
 	CACHE_PREFIX_DEVICE   = "session:device"
 	CACHE_PREFIX_LOGIN    = "session:login"
 	CACHE_PREFIX_REGISTER = "session:register"

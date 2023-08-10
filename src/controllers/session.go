@@ -18,7 +18,7 @@ type SessionControllers struct {
 func InitSessionControllers(redisClient *redis.Client) *SessionControllers {
 	return &SessionControllers{
 		RedisClient:     redisClient,
-		SessionServices: services.InitSessionServices(),
+		SessionServices: services.InitSessionService(),
 	}
 }
 
