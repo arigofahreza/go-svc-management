@@ -22,6 +22,6 @@ func MongoClient() (*mongo.Client, error) {
 	if err != nil {
 		return nil, err
 	}
-	MongoCollection = client.Database(os.Getenv("MONGO_DB")).Collection(os.Getenv("MONGO_USER_COLLECTION"))
+	MongoCollection = client.Database(os.Getenv("MONGO_DB")).Collection(os.Getenv("MONGO_COLLECTION"))
 	return client, nil
 }

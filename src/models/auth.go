@@ -1,16 +1,11 @@
 package models
 
 type LoginModel struct {
-	Username string `json:"username"`
-	Password string `json:"password"`
-}
-
-type SessionModel struct {
-	SessionId string `json:"session_id"`
+	Username string
+	Password string
 }
 
 type TokenModel struct {
-	ActiveToken  string `json:"active_token"`
-	RefreshToken string `json:"refresh_token"`
+	AccessToken  string
+	RefreshToken string
 }
-
